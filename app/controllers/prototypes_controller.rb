@@ -37,7 +37,7 @@ def update
   if @prototype.save
   redirect_to prototype_path
   else
-    render edit_prototype_path
+    render :edit, status: :unprocessable_entity
   end
 end
 
